@@ -1,0 +1,163 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: white;
+  
+    }
+
+.calculadora {
+    border: 1px solid #292929;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #292929;
+
+} 
+
+
+.display{
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+  
+}
+
+.button{
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    cursor: pointer;
+    color: white;
+    }
+
+    .button-igual{
+      padding: 20px;
+      font-size: 1.5em;
+      border: 1px solid;
+      border-radius: 5px;
+      background-color: #53ecec;
+      cursor: pointer;
+      
+      }
+
+.button:hover{
+    background-color: #292929;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.container {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header {
+  background-color: #292929;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 17px;
+  position: relative;
+}
+
+.header .title {
+  margin: 0;
+}
+
+.header .window-controls {
+  position: absolute;
+  top: 1px;
+  right:15px;
+}
+
+.header .window-controls button {
+  background-color: #292929;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header .window-controls button#minimize {
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header .window-controls button#maximize {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.header .window-controls button#close:hover {
+  font-size: 13px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  background-color: #ec5353;
+}
+
+.header .window-controls button:hover {
+  background-color: #4e4e4e;
+}
+
+  @media (max-width: 600px) {
+    .calculator {
+      padding: 10px;
+    }
+  
+    .display {
+      font-size: 1.5em;
+      padding: 10px;
+    }
+  
+    .button {
+      padding: 15px;
+      font-size: 1.2em;
+    }
+  
+    .buttons {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .buttons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .button {
+      padding: 10px;
+      font-size: 1em;
+    }
+}
